@@ -23,6 +23,15 @@ int main() {
     // Placeholder - replace with your implementation
     printf("Exercise 1: Basic Float Pointer\n");
     printf("Implement the TODO above to see correct output.\n");
+    
+    float temp = 25.5;
+    float *p = &temp;
+    printf("Value of temp: %.1ff\n", temp);
+    printf("Address of temp: %p\n", (void*)&temp); 
+    printf("Value of p (address): %p\n", (void*)p);
+    printf("Value of p (*p): %.1f\n", *p);
+    *p = 30.0;
+    printf("New value of temp: %.1ff\n",temp);
 
     return 0;
 }
