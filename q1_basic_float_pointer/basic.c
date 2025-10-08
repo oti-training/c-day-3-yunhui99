@@ -16,6 +16,10 @@
 
 #include <stdio.h>
 
+int calculate_double(int *num) {
+    return (*num)*2;
+}
+
 int main() {
     // TODO: Implement the exercise here
     // Hint: Remember to use & for addresses and * for dereferencing. Declare a float, point to it, print value and address, modify via pointer, print again.
@@ -28,10 +32,13 @@ int main() {
     float *p = &temp;
     printf("Value of temp: %.1ff\n", temp);
     printf("Address of temp: %p\n", (void*)&temp); 
-    printf("Value of p (address): %p\n", (void*)p);
-    printf("Value of p (*p): %.1f\n", *p);
     *p = 30.0;
     printf("New value of temp: %.1ff\n",temp);
+    
+    int val = 5;
+    int result = calculate_double(&val);
+    printf("Double of %d is %d\n", val, result);
+ 
 
     return 0;
 }
