@@ -35,19 +35,11 @@ int main() {
     int val = 5;
     int result = calculate_double(&val);
     printf("Double of %d is %d\n", val, result);
-<<<<<<< HEAD
     
     if(temp == 30.0f) {
     	printf("Correct implementation! ✓\n");
     }
- 
-=======
->>>>>>> 49422f69f6758797defe5e05d6437e53d3c30bf1
 
-    if(temp == 30.0f) {
-    printf("Correct implementation! ✓\n");
-    }
- 
     return 0;
 }
 
