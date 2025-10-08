@@ -25,9 +25,6 @@ int main() {
     // Hint: Remember to use & for addresses and * for dereferencing. Declare a float, point to it, print value and address, modify via pointer, print again.
 
     // Placeholder - replace with your implementation
-    printf("Exercise 1: Basic Float Pointer\n");
-    printf("Implement the TODO above to see correct output.\n");
-    
     float temp = 25.5;
     float *p = &temp;
     printf("Value of temp: %.1ff\n", temp);
