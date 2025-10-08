@@ -47,6 +47,10 @@ int main() {
 
     // Placeholder output
     //printf("Implement the TODOs to see correct output.\n");
+    
+    if (student.grade == 90) {
+    	printf("Grade updated! ✓\n");
+    }
 
     return 0;
 }
