@@ -19,9 +19,16 @@
 int sum_array(int *arr, int size) {
     // TODO: Implement the sum using pointer arithmetic
     // Hint: Initialize a pointer to the start of the array, set sum to 0, loop over the size adding the dereferenced pointer value and incrementing the pointer.
-
+    
+    int sum = 0;
+    int *ptr=arr;
+    
+    for (int i=0; i < size; i++)  {
+    	sum += *(ptr + i);
+    }
+    
     // Placeholder
-    return 0;
+    return sum;
 }
 
 int main() {
@@ -30,8 +37,8 @@ int main() {
     int nums[4] = {1, 2, 3, 4};
 
     // TODO: Call sum_array(nums, 4)
-
-    int result = 0; // Replace with actual call
+    
+    int result = sum_array(nums,4); // Replace with actual call
 
     printf("Sum of array: %d\n", result);
 
